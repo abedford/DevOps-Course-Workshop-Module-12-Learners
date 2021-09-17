@@ -1,0 +1,645 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2021-09-16T14:30:41.8955446+01:00",
+            "magic": "b9252cabf480c88f281e0d29a10d6b8889ddc9fcbc466d4f9374c0fb69b330b8",
+            "version": "v3.12.0"
+        },
+        "secrets_providers": {
+            "type": "passphrase",
+            "state": {
+                "salt": "v1:Knmbt7C09OQ=:v1:oFH8NZCOfP4KXoNp:PdSh+jrW2is6LoB/CXTCeT38oo/1DA=="
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack"
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::pulumi:providers:random::default_4_2_0",
+                "custom": true,
+                "id": "2301b6a8-a645-4821-ba6e-819647b70e7d",
+                "type": "pulumi:providers:random",
+                "inputs": {
+                    "version": "4.2.0"
+                },
+                "outputs": {
+                    "version": "4.2.0"
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0",
+                "custom": true,
+                "id": "298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "type": "pulumi:providers:azure-native",
+                "inputs": {
+                    "location": "uksouth",
+                    "version": "1.28.0"
+                },
+                "outputs": {
+                    "location": "uksouth",
+                    "version": "1.28.0"
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group",
+                "custom": true,
+                "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop",
+                "type": "azure-native:resources:ResourceGroup",
+                "inputs": {
+                    "location": "uksouth",
+                    "resourceGroupName": "CreditSuisse2_AnnieBedford_Workshop"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "{\"location\":\"uksouth\",\"resourceGroupName\":\"CreditSuisse2_AnnieBedford_Workshop\"}"
+                    },
+                    "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop",
+                    "location": "uksouth",
+                    "name": "CreditSuisse2_AnnieBedford_Workshop",
+                    "properties": {
+                        "provisioningState": "Succeeded"
+                    },
+                    "tags": {},
+                    "type": "Microsoft.Resources/resourceGroups"
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "protect": true,
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0::298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "propertyDependencies": {
+                    "location": null,
+                    "resourceGroupName": null
+                },
+                "aliases": [
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20151101:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20151101:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20160201:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20160201:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20160701:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20160701:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20160901:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20160901:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20170510:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20170510:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20180201:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20180201:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20180501:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20180501:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20190301:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20190301:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20190501:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20190501:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20190510:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20190510:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20190701:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20190701:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20190801:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20190801:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20191001:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20191001:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20200601:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20200601:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20200801:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20200801:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20201001:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20201001:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20210101:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20210101:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources/v20210401:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:resources/v20210401:ResourceGroup::resource_group"
+                ]
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::random:index/randomPassword:RandomPassword::db_password",
+                "custom": true,
+                "id": "none",
+                "type": "random:index/randomPassword:RandomPassword",
+                "inputs": {
+                    "__defaults": [
+                        "lower",
+                        "minLower",
+                        "minNumeric",
+                        "minSpecial",
+                        "minUpper",
+                        "number",
+                        "upper"
+                    ],
+                    "length": 16,
+                    "lower": true,
+                    "minLower": 0,
+                    "minNumeric": 0,
+                    "minSpecial": 0,
+                    "minUpper": 0,
+                    "number": true,
+                    "special": true,
+                    "upper": true
+                },
+                "outputs": {
+                    "id": "none",
+                    "length": 16,
+                    "lower": true,
+                    "minLower": 0,
+                    "minNumeric": 0,
+                    "minSpecial": 0,
+                    "minUpper": 0,
+                    "number": true,
+                    "result": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "\"6\\u003cKQx\\u00267LW%1_:[TG\""
+                    },
+                    "special": true,
+                    "upper": true
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:random::default_4_2_0::2301b6a8-a645-4821-ba6e-819647b70e7d",
+                "propertyDependencies": {
+                    "length": null,
+                    "special": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::azure-native:web:AppServicePlan::app_service_plan",
+                "custom": true,
+                "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/serverFarms/cs2mod12anniebedford-non-iac-asp",
+                "type": "azure-native:web:AppServicePlan",
+                "inputs": {
+                    "hyperV": false,
+                    "isSpot": false,
+                    "isXenon": false,
+                    "kind": "linux",
+                    "location": "UK South",
+                    "maximumElasticWorkerCount": 1,
+                    "name": "cs2mod12anniebedford-non-iac-asp",
+                    "perSiteScaling": false,
+                    "reserved": true,
+                    "resourceGroupName": "CreditSuisse2_AnnieBedford_Workshop",
+                    "sku": {
+                        "capacity": 1,
+                        "family": "B",
+                        "name": "B1",
+                        "size": "B1",
+                        "tier": "Basic"
+                    },
+                    "targetWorkerCount": 0,
+                    "targetWorkerSizeId": 0
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "{\"hyperV\":false,\"isSpot\":false,\"isXenon\":false,\"kind\":\"linux\",\"location\":\"UK South\",\"maximumElasticWorkerCount\":1,\"name\":\"cs2mod12anniebedford-non-iac-asp\",\"perSiteScaling\":false,\"reserved\":true,\"resourceGroupName\":\"CreditSuisse2_AnnieBedford_Workshop\",\"sku\":{\"capacity\":1,\"family\":\"B\",\"name\":\"B1\",\"size\":\"B1\",\"tier\":\"Basic\"},\"targetWorkerCount\":0,\"targetWorkerSizeId\":0}"
+                    },
+                    "geoRegion": "UK South",
+                    "hyperV": false,
+                    "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/serverfarms/cs2mod12anniebedford-non-iac-asp",
+                    "isSpot": false,
+                    "isXenon": false,
+                    "kind": "linux",
+                    "location": "UK South",
+                    "maximumElasticWorkerCount": 1,
+                    "maximumNumberOfWorkers": 3,
+                    "name": "cs2mod12anniebedford-non-iac-asp",
+                    "numberOfSites": 1,
+                    "perSiteScaling": false,
+                    "provisioningState": "Succeeded",
+                    "reserved": true,
+                    "resourceGroup": "CreditSuisse2_AnnieBedford_Workshop",
+                    "sku": {
+                        "capacity": 1,
+                        "family": "B",
+                        "name": "B1",
+                        "size": "B1",
+                        "tier": "Basic"
+                    },
+                    "status": "Ready",
+                    "subscription": "d33b95c7-af3c-4247-9661-aa96d47fccc0",
+                    "tags": {},
+                    "targetWorkerCount": 0,
+                    "targetWorkerSizeId": 0,
+                    "type": "Microsoft.Web/serverfarms"
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "protect": true,
+                "dependencies": [
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                ],
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0::298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "propertyDependencies": {
+                    "hyperV": null,
+                    "isSpot": null,
+                    "isXenon": null,
+                    "kind": null,
+                    "location": null,
+                    "maximumElasticWorkerCount": null,
+                    "perSiteScaling": null,
+                    "reserved": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                    ],
+                    "sku": null,
+                    "targetWorkerCount": null,
+                    "targetWorkerSizeId": null
+                },
+                "aliases": [
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20150801:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20150801:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20160901:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20160901:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20180201:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20180201:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20190801:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20190801:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20200601:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20200601:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20200901:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20200901:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20201001:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20201001:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20201201:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20201201:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210101:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210101:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210115:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210115:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210201:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210201:AppServicePlan::app_service_plan"
+                ]
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::azure-native:sql:Server::sql_server",
+                "custom": true,
+                "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Sql/servers/cs2mod12anniebedford-non-iac-sqlserver",
+                "type": "azure-native:sql:Server",
+                "inputs": {
+                    "administratorLogin": "db",
+                    "administratorLoginPassword": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "\"6\\u003cKQx\\u00267LW%1_:[TG\""
+                    },
+                    "location": "uksouth",
+                    "publicNetworkAccess": "Enabled",
+                    "resourceGroupName": "CreditSuisse2_AnnieBedford_Workshop",
+                    "serverName": "cs2mod12anniebedford-non-iac-sqlserver",
+                    "version": "12.0"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "{\"administratorLogin\":\"db\",\"administratorLoginPassword\":\"6\\u003cKQx\\u00267LW%1_:[TG\",\"location\":\"uksouth\",\"publicNetworkAccess\":\"Enabled\",\"resourceGroupName\":\"CreditSuisse2_AnnieBedford_Workshop\",\"serverName\":\"cs2mod12anniebedford-non-iac-sqlserver\",\"version\":\"12.0\"}"
+                    },
+                    "administratorLogin": "db",
+                    "fullyQualifiedDomainName": "cs2mod12anniebedford-non-iac-sqlserver.database.windows.net",
+                    "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Sql/servers/cs2mod12anniebedford-non-iac-sqlserver",
+                    "kind": "v12.0",
+                    "location": "uksouth",
+                    "name": "cs2mod12anniebedford-non-iac-sqlserver",
+                    "privateEndpointConnections": [],
+                    "publicNetworkAccess": "Enabled",
+                    "state": "Ready",
+                    "tags": {},
+                    "type": "Microsoft.Sql/servers",
+                    "version": "12.0"
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "protect": true,
+                "dependencies": [
+                    "urn:pulumi:dev::move-to-iac::random:index/randomPassword:RandomPassword::db_password",
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                ],
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0::298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "propertyDependencies": {
+                    "administratorLogin": null,
+                    "administratorLoginPassword": [
+                        "urn:pulumi:dev::move-to-iac::random:index/randomPassword:RandomPassword::db_password"
+                    ],
+                    "location": null,
+                    "publicNetworkAccess": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                    ],
+                    "serverName": null,
+                    "version": null
+                },
+                "aliases": [
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20140401:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20140401:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20150501preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20150501preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20190601preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20190601preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20200202preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20200202preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20200801preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20200801preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20201101preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20201101preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20210201preview:Server::sql_server",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20210201preview:Server::sql_server"
+                ]
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::azure-native:sql:Database::sql_database",
+                "custom": true,
+                "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Sql/servers/cs2mod12anniebedford-non-iac-sqlserver/databases/cs2mod12anniebedford-non-iac-db",
+                "type": "azure-native:sql:Database",
+                "inputs": {
+                    "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+                    "collation": "SQL_Latin1_General_CP1_CI_AS",
+                    "databaseName": "cs2mod12anniebedford-non-iac-db",
+                    "location": "uksouth",
+                    "maintenanceConfigurationId": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default",
+                    "maxSizeBytes": 2147483648,
+                    "readScale": "Disabled",
+                    "requestedBackupStorageRedundancy": "Geo",
+                    "resourceGroupName": "CreditSuisse2_AnnieBedford_Workshop",
+                    "serverName": "cs2mod12anniebedford-non-iac-sqlserver",
+                    "sku": {
+                        "capacity": 5,
+                        "name": "Basic",
+                        "tier": "Basic"
+                    },
+                    "zoneRedundant": false
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "{\"catalogCollation\":\"SQL_Latin1_General_CP1_CI_AS\",\"collation\":\"SQL_Latin1_General_CP1_CI_AS\",\"databaseName\":\"cs2mod12anniebedford-non-iac-db\",\"location\":\"uksouth\",\"maintenanceConfigurationId\":\"/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default\",\"maxSizeBytes\":2147483648,\"readScale\":\"Disabled\",\"requestedBackupStorageRedundancy\":\"Geo\",\"resourceGroupName\":\"CreditSuisse2_AnnieBedford_Workshop\",\"serverName\":\"cs2mod12anniebedford-non-iac-sqlserver\",\"sku\":{\"capacity\":5,\"name\":\"Basic\",\"tier\":\"Basic\"},\"zoneRedundant\":false}"
+                    },
+                    "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+                    "collation": "SQL_Latin1_General_CP1_CI_AS",
+                    "creationDate": "2021-09-16T08:48:48.543Z",
+                    "currentBackupStorageRedundancy": "Geo",
+                    "currentServiceObjectiveName": "Basic",
+                    "currentSku": {
+                        "capacity": 5,
+                        "name": "Basic",
+                        "tier": "Basic"
+                    },
+                    "databaseId": "8a4b8b86-4497-41df-9459-40f190a52d66",
+                    "defaultSecondaryLocation": "ukwest",
+                    "earliestRestoreDate": "2021-09-16T09:00:35Z",
+                    "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Sql/servers/cs2mod12anniebedford-non-iac-sqlserver/databases/cs2mod12anniebedford-non-iac-db",
+                    "kind": "v12.0,user",
+                    "location": "uksouth",
+                    "maintenanceConfigurationId": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default",
+                    "maxSizeBytes": 2147483648,
+                    "name": "cs2mod12anniebedford-non-iac-db",
+                    "readScale": "Disabled",
+                    "requestedBackupStorageRedundancy": "Geo",
+                    "requestedServiceObjectiveName": "Basic",
+                    "sku": {
+                        "capacity": 5,
+                        "name": "Basic",
+                        "tier": "Basic"
+                    },
+                    "status": "Online",
+                    "tags": {},
+                    "type": "Microsoft.Sql/servers/databases",
+                    "zoneRedundant": false
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "protect": true,
+                "dependencies": [
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql:Server::sql_server"
+                ],
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0::298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "propertyDependencies": {
+                    "catalogCollation": null,
+                    "collation": null,
+                    "databaseName": null,
+                    "location": null,
+                    "maintenanceConfigurationId": null,
+                    "maxSizeBytes": null,
+                    "readScale": null,
+                    "requestedBackupStorageRedundancy": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                    ],
+                    "serverName": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:sql:Server::sql_server"
+                    ],
+                    "sku": null,
+                    "zoneRedundant": null
+                },
+                "aliases": [
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20140401:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20140401:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20170301preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20170301preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20171001preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20171001preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20190601preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20190601preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20200202preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20200202preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20200801preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20200801preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20201101preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20201101preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql/v20210201preview:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:sql/v20210201preview:Database::sql_database"
+                ]
+            },
+            {
+                "urn": "urn:pulumi:dev::move-to-iac::azure-native:web:WebApp::web_app",
+                "custom": true,
+                "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/sites/cs2mod12anniebedford-non-iac-app",
+                "type": "azure-native:web:WebApp",
+                "inputs": {
+                    "clientAffinityEnabled": false,
+                    "clientCertEnabled": false,
+                    "clientCertMode": "Required",
+                    "containerSize": 0,
+                    "customDomainVerificationId": "C11362A7BC6B6AE47600B6CA026E5B947B6577DA4AE022E214743600719CCB1D",
+                    "dailyMemoryTimeQuota": 0,
+                    "enabled": true,
+                    "hostNameSslStates": [
+                        {
+                            "hostType": "Standard",
+                            "name": "cs2mod12anniebedford-non-iac-app.azurewebsites.net",
+                            "sslState": "Disabled"
+                        },
+                        {
+                            "hostType": "Repository",
+                            "name": "cs2mod12anniebedford-non-iac-app.scm.azurewebsites.net",
+                            "sslState": "Disabled"
+                        }
+                    ],
+                    "hostNamesDisabled": false,
+                    "httpsOnly": false,
+                    "hyperV": false,
+                    "isXenon": false,
+                    "keyVaultReferenceIdentity": "SystemAssigned",
+                    "kind": "app,linux,container",
+                    "location": "UK South",
+                    "name": "cs2mod12anniebedford-non-iac-app",
+                    "redundancyMode": "None",
+                    "reserved": true,
+                    "resourceGroupName": "CreditSuisse2_AnnieBedford_Workshop",
+                    "scmSiteAlsoStopped": false,
+                    "serverFarmId": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/serverFarms/cs2mod12anniebedford-non-iac-asp",
+                    "siteConfig": {
+                        "acrUseManagedIdentityCreds": false,
+                        "alwaysOn": false,
+                        "appSettings": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "plaintext": "[{\"name\":\"CONNECTION_STRING\",\"value\":\"Server=tcp:cs2mod12anniebedford-non-iac-sqlserver.database.windows.net,1433;Initial Catalog=cs2mod12anniebedford-non-iac-db;Persist Security Info=False;User ID=db;Password=6\\u003cKQx\\u00267LW%1_:[TG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;\"},{\"name\":\"DEPLOYMENT_METHOD\",\"value\":\"pulumi\"}]"
+                        },
+                        "functionAppScaleLimit": 0,
+                        "http20Enabled": false,
+                        "linuxFxVersion": "DOCKER|corndelldevopscourse/mod12app:latest",
+                        "localMySqlEnabled": false,
+                        "minimumElasticInstanceCount": 0,
+                        "netFrameworkVersion": "v4.6",
+                        "numberOfWorkers": 1,
+                        "windowsFxVersion": ""
+                    },
+                    "storageAccountRequired": false
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "plaintext": "{\"clientAffinityEnabled\":false,\"clientCertEnabled\":false,\"clientCertMode\":\"Required\",\"containerSize\":0,\"customDomainVerificationId\":\"C11362A7BC6B6AE47600B6CA026E5B947B6577DA4AE022E214743600719CCB1D\",\"dailyMemoryTimeQuota\":0,\"enabled\":true,\"hostNameSslStates\":[{\"hostType\":\"Standard\",\"name\":\"cs2mod12anniebedford-non-iac-app.azurewebsites.net\",\"sslState\":\"Disabled\"},{\"hostType\":\"Repository\",\"name\":\"cs2mod12anniebedford-non-iac-app.scm.azurewebsites.net\",\"sslState\":\"Disabled\"}],\"hostNamesDisabled\":false,\"httpsOnly\":false,\"hyperV\":false,\"isXenon\":false,\"keyVaultReferenceIdentity\":\"SystemAssigned\",\"kind\":\"app,linux,container\",\"location\":\"UK South\",\"name\":\"cs2mod12anniebedford-non-iac-app\",\"redundancyMode\":\"None\",\"reserved\":true,\"resourceGroupName\":\"CreditSuisse2_AnnieBedford_Workshop\",\"scmSiteAlsoStopped\":false,\"serverFarmId\":\"/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/serverFarms/cs2mod12anniebedford-non-iac-asp\",\"siteConfig\":{\"acrUseManagedIdentityCreds\":false,\"alwaysOn\":false,\"appSettings\":[{\"name\":\"CONNECTION_STRING\",\"value\":\"Server=tcp:cs2mod12anniebedford-non-iac-sqlserver.database.windows.net,1433;Initial Catalog=cs2mod12anniebedford-non-iac-db;Persist Security Info=False;User ID=db;Password=6\\u003cKQx\\u00267LW%1_:[TG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;\"},{\"name\":\"DEPLOYMENT_METHOD\",\"value\":\"pulumi\"}],\"functionAppScaleLimit\":0,\"http20Enabled\":false,\"linuxFxVersion\":\"DOCKER|corndelldevopscourse/mod12app:latest\",\"localMySqlEnabled\":false,\"minimumElasticInstanceCount\":0,\"netFrameworkVersion\":\"v4.6\",\"numberOfWorkers\":1,\"windowsFxVersion\":\"\"},\"storageAccountRequired\":false}"
+                    },
+                    "availabilityState": "Normal",
+                    "clientAffinityEnabled": false,
+                    "clientCertEnabled": false,
+                    "clientCertMode": "Required",
+                    "containerSize": 0,
+                    "customDomainVerificationId": "C11362A7BC6B6AE47600B6CA026E5B947B6577DA4AE022E214743600719CCB1D",
+                    "dailyMemoryTimeQuota": 0,
+                    "defaultHostName": "cs2mod12anniebedford-non-iac-app.azurewebsites.net",
+                    "enabled": true,
+                    "enabledHostNames": [
+                        "cs2mod12anniebedford-non-iac-app.azurewebsites.net",
+                        "cs2mod12anniebedford-non-iac-app.scm.azurewebsites.net"
+                    ],
+                    "hostNameSslStates": [
+                        {
+                            "hostType": "Standard",
+                            "name": "cs2mod12anniebedford-non-iac-app.azurewebsites.net",
+                            "sslState": "Disabled"
+                        },
+                        {
+                            "hostType": "Repository",
+                            "name": "cs2mod12anniebedford-non-iac-app.scm.azurewebsites.net",
+                            "sslState": "Disabled"
+                        }
+                    ],
+                    "hostNames": [
+                        "cs2mod12anniebedford-non-iac-app.azurewebsites.net"
+                    ],
+                    "hostNamesDisabled": false,
+                    "httpsOnly": false,
+                    "hyperV": false,
+                    "id": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/sites/cs2mod12anniebedford-non-iac-app",
+                    "isXenon": false,
+                    "keyVaultReferenceIdentity": "SystemAssigned",
+                    "kind": "app,linux,container",
+                    "lastModifiedTimeUtc": "2021-09-16T13:30:39.41",
+                    "location": "UK South",
+                    "name": "cs2mod12anniebedford-non-iac-app",
+                    "outboundIpAddresses": "51.140.84.145,51.140.60.161,51.140.61.32,51.140.68.240,51.140.64.162",
+                    "possibleOutboundIpAddresses": "51.140.84.145,51.140.60.161,51.140.61.32,51.140.68.240,51.140.64.162,51.140.177.236,51.140.46.202",
+                    "redundancyMode": "None",
+                    "repositorySiteName": "cs2mod12anniebedford-non-iac-app",
+                    "reserved": true,
+                    "resourceGroup": "CreditSuisse2_AnnieBedford_Workshop",
+                    "scmSiteAlsoStopped": false,
+                    "serverFarmId": "/subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/CreditSuisse2_AnnieBedford_Workshop/providers/Microsoft.Web/serverfarms/cs2mod12anniebedford-non-iac-asp",
+                    "siteConfig": {
+                        "acrUseManagedIdentityCreds": false,
+                        "alwaysOn": false,
+                        "functionAppScaleLimit": 0,
+                        "http20Enabled": false,
+                        "linuxFxVersion": "DOCKER|corndelldevopscourse/mod12app:latest",
+                        "minimumElasticInstanceCount": 1,
+                        "numberOfWorkers": 1,
+                        "windowsFxVersion": ""
+                    },
+                    "state": "Running",
+                    "storageAccountRequired": false,
+                    "type": "Microsoft.Web/sites",
+                    "usageState": "Normal"
+                },
+                "parent": "urn:pulumi:dev::move-to-iac::pulumi:pulumi:Stack::move-to-iac-dev",
+                "protect": true,
+                "dependencies": [
+                    "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql:Database::sql_database",
+                    "urn:pulumi:dev::move-to-iac::random:index/randomPassword:RandomPassword::db_password",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web:AppServicePlan::app_service_plan",
+                    "urn:pulumi:dev::move-to-iac::azure-native:sql:Server::sql_server"
+                ],
+                "provider": "urn:pulumi:dev::move-to-iac::pulumi:providers:azure-native::default_1_28_0::298fba9a-a0de-4e6c-9b6d-63e3db18c15b",
+                "propertyDependencies": {
+                    "clientAffinityEnabled": null,
+                    "clientCertEnabled": null,
+                    "clientCertMode": null,
+                    "containerSize": null,
+                    "customDomainVerificationId": null,
+                    "dailyMemoryTimeQuota": null,
+                    "enabled": null,
+                    "hostNameSslStates": null,
+                    "hostNamesDisabled": null,
+                    "httpsOnly": null,
+                    "hyperV": null,
+                    "isXenon": null,
+                    "keyVaultReferenceIdentity": null,
+                    "kind": null,
+                    "location": null,
+                    "redundancyMode": null,
+                    "reserved": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:resources:ResourceGroup::resource_group"
+                    ],
+                    "scmSiteAlsoStopped": null,
+                    "serverFarmId": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:web:AppServicePlan::app_service_plan"
+                    ],
+                    "siteConfig": [
+                        "urn:pulumi:dev::move-to-iac::azure-native:sql:Database::sql_database",
+                        "urn:pulumi:dev::move-to-iac::random:index/randomPassword:RandomPassword::db_password",
+                        "urn:pulumi:dev::move-to-iac::azure-native:sql:Server::sql_server"
+                    ],
+                    "storageAccountRequired": null
+                },
+                "aliases": [
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20150801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20150801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20160801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20160801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20180201:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20180201:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20181101:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20181101:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20190801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20190801:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20200601:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20200601:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20200901:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20200901:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20201001:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20201001:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20201201:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20201201:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210101:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210101:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210115:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210115:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-native:web/v20210201:WebApp::web_app",
+                    "urn:pulumi:dev::move-to-iac::azure-nextgen:web/v20210201:WebApp::web_app"
+                ]
+            }
+        ]
+    }
+}
